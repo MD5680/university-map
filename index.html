@@ -8,7 +8,11 @@
     body {
       margin: 0;
       font-family: Arial, sans-serif;
-      background: linear-gradient(to right, #1e3c72, #2a5298);
+      background-image: url("https://images.indianexpress.com/2023/05/cuk_image-1.jpg");
+      background-size: cover;        /* make it cover the entire screen */
+      background-position: center;   /* center the image */
+      background-repeat: no-repeat;  /* prevent tiling */
+      background-attachment: fixed;  /* optional: keep image fixed while scrolling */
       color: white;
       text-align: center;
       height: 100vh;
@@ -16,13 +20,16 @@
       flex-direction: column;
       justify-content: center;
       align-items: center;
+      backdrop-filter: brightness(0.9); /* keep text visible */
     }
     h1 {
       font-size: 3rem;
       margin-bottom: 10px;
+      text-shadow: 2px 2px 4px rgba(0,0,0,0.7); /* improves text readability */
     }
     p {
       font-size: 1.5rem;
+      text-shadow: 1px 1px 3px rgba(0,0,0,0.7);
     }
     button {
       margin-top: 20px;
